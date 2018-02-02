@@ -9,4 +9,4 @@ Para usar `this.state` se debe declarar `super()` al inicio
 
 css from `http://tachyons.io/`
 
-font from `http://www.cufonfonts.com/en/font/6218/sega-logo-font`
+font from `http://www.cufonfonts.com/en/font/6218/sega-logo-font` 
