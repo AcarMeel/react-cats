@@ -1,4 +1,4 @@
-# RoboFriends
+# CatFriends
 
 `npm start` to run the app
 
