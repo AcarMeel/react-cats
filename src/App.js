@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {cats} from './cats';
+// import {cats} from './cats';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
 
@@ -7,9 +7,14 @@ class App extends Component {
     constructor() {
         super()
         this.state = {
-            cats: cats,
+            cats: [],
             searchfield: ''
         }
+    }
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(res => res.json())
+        .then(users => this.setState({ cats: users }));
     }
     // Make arrow function for the scope
     onSearchChange = (event) => {
